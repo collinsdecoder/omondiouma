@@ -1,0 +1,82 @@
+section{
+            flex: 1 1 30%;
+            box-shadow: 0 5px 5px 10px orange;
+            background-color: #310424;
+            border-radius: 10px;
+            color:white;
+            max-width: 400px;
+            height: max-content;
+        }
+        main{
+            min-height: 40%;
+            min-width: 70%;
+            background-color: blue(0,0,0,0.5);
+            background-image: url(Untitled.jpeg) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-weight: bolder;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25px;
+            font-size: 20px;
+        }
+        h3{
+            text-align: center;
+            color: orange;
+            font-weight: bolder;
+          
+        }
+        body{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            padding: 20px;
+            justify-content: center;
+            background:linear-gradient(to right,teal, green,yellow,blue,orange,green,teal);
+        }
+        @media(max-width:768px){
+            body{
+                flex-direction: column;
+                align-self: center;
+                justify-content: center;
+                background:linear-gradient(to left,green,red);
+            }
+        }
+      
+          footer{
+            width: 100%;
+            bottom: 0%;
+            position: relative;
+            text-align: center;
+            background-color: rgb(0,0,0,0.5);
+            padding: 3px;
+            font-weight: bolder;
+        }
+        .theme{
+            background-color: color-mix(in srgb, green 40%, pink 50%);
+            width: 10%;
+            box-shadow: 0 5px 10px pink;
+            border-radius: 30px;
+            border-width: 3px;
+            border-collapse: collapse;
+            border: none;
+            padding: 8px;
+            text-wrap:inherit;
+            top: 2%;
+        }
+        button:hover{
+            background: teal;
+            cursor: pointer;
+        }
+        .hero{
+            background-color: rgb(0,0,0,0.5);
+            color: white;
+        }
+        
+  
+       
+       
+        

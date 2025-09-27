@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You Review Page</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <style>
+    body {
+      background: url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80) no-repeat center center/cover;
+      margin: 10px;
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    @media(max-width: 600px) {
+      body {
+        padding: 20px;
+      }
+    }
+
+    main {
+      text-align: center;
+    
+  
+      
+      
+      
+      
+    }
+    
+
+    .logo {
+      font-size: 100px;
+      color: limegreen; 
+      margin: 0 0 20px 0;
+    }
+
+    h5 {
+      font-size: 24px;
+      margin: 0 0 15px 0;
+    }
+
+    section {
+      font-size: 16px;
+      color: #ddd;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 5%;
+    }
+    #exit{
+        background-color: red;
+        left: 0%;
+    }
+        .footer-socials {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-socials a {
+  color: #fff;
+  font-size: 24px;
+}
+   footer {
+           width: 100%;
+           position: fixed;
+            bottom: 0%;
+            position: relative;
+            text-align: center;
+            background-color: rgb(0,0,0,0.5);
+            padding: 3px;
+            font-weight: bolder;
+            
+   }
+          section {
+        flex: 1 1 30%;
+        min-width: min-content;
+        max-width: 400px;
+        padding: 20px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.05); 
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+        box-shadow: 0 5px 15px rgba(255, 165, 0, 0.3);
+        color: black;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+        border: 2px solid rgb(112, 112, 169);
+        margin: auto;
+    }
+    .main{
+      border: none;
+      box-shadow: none;
+      opacity: 1;
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+  <section>
+
+  <main>
+    <p class="logo"><i class="fa-solid fa-check"></i></p>
+    <h5>Thank you for contacting me!</h5>
+    <section class="main">
+        <div class="buttons">
+      <p>I will get back to you as soon as possible.</p>
+      <button id="exit">Exit</button>
+
+      <button id="back">Back</button>
+    </section>
+  </main>
+  </section>
+  <script>
+    const backBtn=document.getElementById('back');
+    backBtn.addEventListener('click',()=>{
+        window.location.href='index.html';
+    });
+    const exitBtn=document.getElementById('exit');
+    exitBtn.addEventListener('click',()=>{
+        window.close();
+    });
+  </script>
+</body>
+  <footer>
+  <div class="footer-socials">
+    <a href="https://facebook.com/collinsouma120016" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com/_collinsouma" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://instagram.com/_collinsouma" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://linkedin.com/in/collins-ouma-2a6334386" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://tiktok.com/@_collinsouma" target="_blank"><i class="fab fa-tiktok"></i></a>
+  </div>
+</footer>
+</html>
+
